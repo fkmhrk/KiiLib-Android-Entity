@@ -18,6 +18,10 @@ public class AndroidKiiUser extends JSONObject implements KiiUser, Parcelable {
 
     private String mId;
 
+    public AndroidKiiUser(String id) {
+        mId = id;
+    }
+
     public AndroidKiiUser(String id, JSONObject data) {
         mId = id;
         Utils.copyJson(data, this);
