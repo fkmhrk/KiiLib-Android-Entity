@@ -19,6 +19,12 @@ public class AndroidKiiObject extends JSONObject implements KiiObject, Parcelabl
     private String mVersion;
     private long mModifiedTime;
 
+    public AndroidKiiObject(AndroidKiiBucket bucket, String id) {
+        mBucket = bucket;
+        mId = id;
+        mVersion = "";
+    }
+
     public AndroidKiiObject(AndroidKiiBucket bucket, String id, String version, JSONObject data) {
         mBucket = bucket;
         mId = id;
