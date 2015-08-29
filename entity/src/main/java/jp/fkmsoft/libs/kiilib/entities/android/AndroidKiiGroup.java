@@ -5,7 +5,6 @@ import android.os.Parcelable;
 
 import jp.fkmsoft.libs.kiilib.entities.BucketOwnable;
 import jp.fkmsoft.libs.kiilib.entities.KiiGroup;
-import jp.fkmsoft.libs.kiilib.entities.KiiUser;
 
 /**
  * Implementation
@@ -48,6 +47,14 @@ public class AndroidKiiGroup implements KiiGroup, Parcelable {
     @Override
     public String getId() {
         return mId;
+    }
+
+    /**
+     * Gets group name
+     * @return Group name
+     */
+    public String getName() {
+        return mName;
     }
 
     // region Parcelable
