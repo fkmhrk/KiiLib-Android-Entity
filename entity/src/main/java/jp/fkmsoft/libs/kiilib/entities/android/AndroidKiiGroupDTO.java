@@ -3,7 +3,6 @@ package jp.fkmsoft.libs.kiilib.entities.android;
 import org.json.JSONObject;
 
 import jp.fkmsoft.libs.kiilib.entities.KiiDTO;
-import jp.fkmsoft.libs.kiilib.entities.KiiUser;
 
 /**
  * DTO for {@link AndroidKiiGroup}
